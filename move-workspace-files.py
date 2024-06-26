@@ -101,7 +101,7 @@ required environment variables:
   # Setup target Cosmo API client
   apiConfig = Configuration(host=args.target_api_url,
                             access_token=DefaultAzureCredential().get_token(targetApiScope).token)
-  apiClient = ApiClient(apiConfig, )
+  apiClient = ApiClient(apiConfig)
   organizationApi = OrganizationApi(apiClient)
   workspaceApi = WorkspaceApi(apiClient)
 
